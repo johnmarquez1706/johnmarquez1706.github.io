@@ -27,10 +27,10 @@
             var el = $("#copies");
             var left = parseInt($(el).html());
 
-            // Add a positive or negative random number
-            left += rand(-3, 3);
 
-            // Ensure the value stays within a range
+            left += rand(-2, 3);
+
+
             left = Math.min(Math.max(left, 0), 150);
 
             $(el).html(left);
