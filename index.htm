@@ -28,10 +28,10 @@
             var left = parseInt($(el).html());
 
 
-            left += rand(-3, 3);
+            left += rand(-3, 4);
 
 
-            left = Math.min(Math.max(left, 91), 151);
+            left = Math.min(Math.max(left, 97), 151);
 
             $(el).html(left);
             setTimeout(copies, rand(4000, 9000));
