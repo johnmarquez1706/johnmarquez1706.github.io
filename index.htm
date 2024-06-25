@@ -20,7 +20,7 @@
             return Math.floor(Math.random() * (max - min + 1)) + min;
         }
 
-        var c = rand(106, 116);
+        var c = rand(101, 116);
         $("#copies").html(c);
 
         function copies() {
@@ -28,13 +28,13 @@
             var left = parseInt($(el).html());
 
 
-            left += rand(-4, 4);
+            left += rand(-4, 5);
 
 
-            left = Math.min(Math.max(left, 97), 151);
+            left = Math.min(Math.max(left, 97), 251);
 
             $(el).html(left);
-            setTimeout(copies, rand(4000, 9000));
+            setTimeout(copies, rand(3000, 9000));
         }
 
         $(function () {
