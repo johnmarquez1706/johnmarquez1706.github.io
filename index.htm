@@ -28,13 +28,13 @@
             var left = parseInt($(el).html());
 
 
-            left += rand(-4, 5);
+            left += rand(-2, 3);
 
 
-            left = Math.min(Math.max(left, 97), 251);
+            left = Math.min(Math.max(left, 97), 151);
 
             $(el).html(left);
-            setTimeout(copies, rand(6000, 9000));
+            setTimeout(copies, rand(3000, 9000));
         }
 
         $(function () {
