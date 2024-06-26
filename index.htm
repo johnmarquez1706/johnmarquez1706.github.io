@@ -20,6 +20,11 @@
             return Math.floor(Math.random() * (max - min + 1)) + min;
         }
 
+        function customRand() {
+            var values = [-2, -1, 0, 0, 0, 1, 2, 2, 2, 2];
+            return values[Math.floor(Math.random() * values.length)];
+        }
+
         var c = rand(101, 116);
         $("#copies").html(c);
 
@@ -27,9 +32,7 @@
             var el = $("#copies");
             var left = parseInt($(el).html());
 
-
-            left += rand(-2, 3);
-
+            left += customRand();
 
             left = Math.min(Math.max(left, 97), 151);
 
