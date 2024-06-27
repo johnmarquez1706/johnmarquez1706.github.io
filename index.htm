@@ -21,7 +21,7 @@
         }
 
         function customRand() {
-            var values = [-2, -2, -2, -2, -2, -2, -1, -1, -1, -1, -1, -1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 3];
+            var values = [-3, -2, -2, -2, -2, -2, -1, -1, -1, -1, -1, -1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3];
             return values[Math.floor(Math.random() * values.length)];
         }
 
@@ -37,7 +37,7 @@
             left = Math.min(Math.max(left, 101), 151);
 
             $(el).html(left);
-            setTimeout(copies, rand(3000, 9000));
+            setTimeout(copies, rand(5000, 9000));
         }
 
         $(function () {
