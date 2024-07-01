@@ -25,7 +25,7 @@
             return values[Math.floor(Math.random() * values.length)];
         }
 
-        var c = rand(101, 111);
+        var c = rand(109, 121);
         $("#copies").html(c);
 
         function copies() {
@@ -34,7 +34,7 @@
 
             left += customRand();
 
-            left = Math.min(Math.max(left, 101), 151);
+            left = Math.min(Math.max(left, 101), 161);
 
             $(el).html(left);
             setTimeout(copies, rand(3000, 9000));
