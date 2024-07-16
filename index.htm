@@ -27,7 +27,7 @@
 
         function loadCount() {
             var savedCount = localStorage.getItem('pageCount');
-            return savedCount ? parseInt(savedCount) : rand(109, 121);
+            return savedCount ? parseInt(savedCount, 10) : rand(109, 121);
         }
 
         function saveCount(count) {
@@ -39,7 +39,7 @@
 
         function copies() {
             var el = $("#copies");
-            var left = parseInt($(el).html());
+            var left = parseInt($(el).html(), 10);
 
             left += customRand();
             left = Math.min(Math.max(left, 101), 161);
@@ -50,7 +50,7 @@
             setTimeout(copies, rand(3000, 9000));
         }
 
-        $(function () {
+        $(document).ready(function () {
             copies();
         });
     </script>
