@@ -25,7 +25,16 @@
             return values[Math.floor(Math.random() * values.length)];
         }
 
-        var c = rand(109, 121);
+        function loadCount() {
+            var savedCount = localStorage.getItem('pageCount');
+            return savedCount ? parseInt(savedCount) : rand(109, 121);
+        }
+
+        function saveCount(count) {
+            localStorage.setItem('pageCount', count);
+        }
+
+        var c = loadCount();
         $("#copies").html(c);
 
         function copies() {
@@ -33,10 +42,11 @@
             var left = parseInt($(el).html());
 
             left += customRand();
-
             left = Math.min(Math.max(left, 101), 161);
 
             $(el).html(left);
+            saveCount(left);
+
             setTimeout(copies, rand(3000, 9000));
         }
 
