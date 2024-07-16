@@ -21,7 +21,7 @@
         }
 
         function customRand() {
-            var values = [-3, -3, -3, -3, -2, -2, -2, -2, -2, -2, -2, -1, -1, -1, -1, -1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3];
+            var values = [-3, -3, -3, -3, -2, -2, -2, -2, -2, -2, -2, -2, -2, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3];
             return values[Math.floor(Math.random() * values.length)];
         }
 
@@ -47,7 +47,7 @@
             $(el).html(left);
             saveCount(left);
 
-            setTimeout(copies, rand(3000, 9000));
+            setTimeout(copies, rand(3000, 6000));
         }
 
         $(document).ready(function () {
