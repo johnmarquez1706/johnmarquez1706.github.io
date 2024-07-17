@@ -49,11 +49,12 @@ background-color:transparent !important;
   -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
-  padding: 10px 15px 0 15px;
+  padding: 25px 15px 0 15px; 
   width: 220px;
   height: 80px;
   text-align: left;
 }
+
 .count:before,
 .count:after {
   content: " ";
