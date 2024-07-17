@@ -21,7 +21,7 @@
         }
 
         function customRand() {
-            var values = [-3, -3, -3, -3, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3];
+            var values = [-3, -3, -3, -3, -2, -2, -2, -2, -2, -2, -2, -2, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3];
             return values[Math.floor(Math.random() * values.length)];
         }
 
@@ -31,7 +31,7 @@
             var timehours = 1 * 60 * 60 * 1000;
 
             if (!lastUpdate || (currentTime - lastUpdate) > timehours) {
-                var newCount = rand(109, 121);
+                var newCount = rand(112, 117);
                 saveCount(newCount);
                 return newCount;
             }
