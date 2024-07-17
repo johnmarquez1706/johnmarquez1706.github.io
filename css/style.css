@@ -97,3 +97,8 @@ background-color:transparent !important;
   line-height: 1.2;
   margin-top: 10px;
 }
+
+.lower-text {
+  display: block; 
+  margin-top: 10px;
+}
