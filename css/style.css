@@ -12,7 +12,7 @@ body {
   color: #3e5c76;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  min-width: 290px;
+  min-width: 320px;
   font-size: 14px;
   position: relative;
 background-color:transparent !important;
@@ -50,7 +50,7 @@ background-color:transparent !important;
   -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
   padding: 10px 15px 0 15px; 
-  width: 220px;
+  width: 180px;
   height: 80px;
   text-align: left;
 }
@@ -81,7 +81,7 @@ background-color:transparent !important;
   /*left: 100px;*/
 }
 .count.right {
-  right: 90px;
+  right: 100px;
 }
 .count.copies .value {
   font-weight: 900;
