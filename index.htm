@@ -28,7 +28,7 @@
         function loadCount() {
             var lastUpdate = localStorage.getItem('lastUpdate');
             var currentTime = new Date().getTime();
-            var twoeHours = 2 * 60 * 60 * 1000;
+            var twoHours = 2 * 60 * 60 * 1000;
 
             if (!lastUpdate || (currentTime - lastUpdate) > twoHours) {
                 // Reset the count if 3 hours have passed
