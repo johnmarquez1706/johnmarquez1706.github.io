@@ -28,7 +28,7 @@
         function loadCount() {
             var lastUpdate = localStorage.getItem('lastUpdate');
             var currentTime = new Date().getTime();
-            var timehours = 1 * 60 * 60 * 1000;
+            var timehours = 0.5 * 60 * 60 * 1000;
 
             if (!lastUpdate || (currentTime - lastUpdate) > timehours) {
                 var newCount = rand(112, 117);
