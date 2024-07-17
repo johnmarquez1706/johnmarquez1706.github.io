@@ -44,7 +44,7 @@ background-color:transparent !important;
   z-index: 120;
   background-color: #3b3b3b;
   border-bottom: 5px solid #0071b2;
-  color: #515b61;
+  color: #fff;
   font-size: 16px;
   -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
@@ -98,5 +98,4 @@ background-color:transparent !important;
   margin-top: 20px;
   width: 120px;
   margin-left: 80px; 
-  color:#fff
 }
