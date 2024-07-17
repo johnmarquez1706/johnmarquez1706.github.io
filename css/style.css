@@ -90,10 +90,12 @@ background-color:transparent !important;
   float: left;
   line-height: 1;
   margin-top: 9px;
+
 }
 .count.copies .desc {
   text-transform: uppercase;
   line-height: 1.2;
   margin-top: 20px;
   width: 120px;
+  margin-left: -80px; 
 }
