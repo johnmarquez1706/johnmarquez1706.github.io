@@ -50,7 +50,7 @@ background-color:transparent !important;
   -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
   padding: 10px 15px 0 15px; 
-  width: 220px;
+  width: 210px;
   height: 80px;
   text-align: left;
 }
@@ -90,7 +90,7 @@ background-color:transparent !important;
   float: left;
   line-height: 1;
   margin-top: 9px;
-  margin-left: -10px; 
+  margin-left: -5px; 
 }
 .count.copies .desc {
   margin-left: 70px;
