@@ -26,12 +26,25 @@
         }
 
         function loadCount() {
+            var lastUpdate = localStorage.getItem('lastUpdate');
+            var currentTime = new Date().getTime();
+            var threeHours = 3 * 60 * 60 * 1000;
+
+            if (!lastUpdate || (currentTime - lastUpdate) > threeHours) {
+                // Reset the count if 3 hours have passed
+                var newCount = rand(109, 121);
+                saveCount(newCount);
+                return newCount;
+            }
+
             var savedCount = localStorage.getItem('pageCount');
             return savedCount ? parseInt(savedCount, 10) : rand(109, 121);
         }
 
         function saveCount(count) {
+            var currentTime = new Date().getTime();
             localStorage.setItem('pageCount', count);
+            localStorage.setItem('lastUpdate', currentTime);
         }
 
         var c = loadCount();
