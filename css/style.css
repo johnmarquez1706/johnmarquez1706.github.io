@@ -12,6 +12,7 @@ body {
   color: #3e5c76;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  line-height: 1.42857143;
   min-width: 320px;
   font-size: 14px;
   position: relative;
