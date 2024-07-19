@@ -9,11 +9,6 @@ body {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
 	display: block
 }
-@font-face {
-	font-family: 'Glyphicons Halflings';
-	src: url("../fonts/glyphicons-halflings-regular.eot.html");
-	src: url("../fonts/glyphicons-halflings-regular.eot-.html#iefix") format('embedded-opentype'), url("../fonts/glyphicons-halflings-regular.woff2.html") format('woff2'), url("../fonts/glyphicons-halflings-regular.woff.html") format('woff'), url("../fonts/glyphicons-halflings-regular.ttf.html") format('truetype'), url("../fonts/glyphicons-halflings-regular.svg.html#glyphicons_halflingsregular") format('svg')
-}
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
