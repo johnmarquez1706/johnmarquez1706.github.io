@@ -6,6 +6,7 @@ html {
 body {
 	margin: 0
 }
+
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
 	display: block
 }
@@ -22,4 +23,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 html {
 	font-size: 10px;
 	-webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+@font-face {
+	font-family: 'Glyphicons Halflings';
+	src: url("../fonts/glyphicons-halflings-regular.eot.html");
+	src: url("../fonts/glyphicons-halflings-regular.eot-.html#iefix") format('embedded-opentype'), url("../fonts/glyphicons-halflings-regular.woff2.html") format('woff2'), url("../fonts/glyphicons-halflings-regular.woff.html") format('woff'), url("../fonts/glyphicons-halflings-regular.ttf.html") format('truetype'), url("../fonts/glyphicons-halflings-regular.svg.html#glyphicons_halflingsregular") format('svg')
+}
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #fff;
+	background-color: #fff
 }
