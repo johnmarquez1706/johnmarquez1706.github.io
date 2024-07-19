@@ -90,7 +90,7 @@ background-color:transparent !important;
   float: left;
   line-height: 1;
   margin-top: 9px;
-
+  margin-left: -3px;
 }
 .count.copies .desc {
   text-transform: uppercase;
