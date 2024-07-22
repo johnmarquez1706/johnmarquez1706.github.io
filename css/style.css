@@ -43,7 +43,7 @@ background-color:transparent !important;
   top: 0;
   z-index: 120;
   background-color: #bcc0c2;
-  border-bottom: 5px solid #0071b2;
+  border-bottom: 5px solid #D35400;
   color: #515b61;
   font-size: 16px;
   -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
@@ -86,7 +86,7 @@ background-color:transparent !important;
 .count.copies .value {
   font-weight: 900;
   font-size: 41px;
-  color: #0071b2;
+  color: #D35400;
   float: left;
   line-height: 1;
   margin-top: 9px;
