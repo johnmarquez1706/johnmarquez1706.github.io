@@ -27,6 +27,22 @@
             return values[Math.floor(Math.random() * values.length)];
         }
 
+        function initializeCount() {
+            var savedCount = localStorage.getItem('pageCount');
+            if (!savedCount) {
+                var newCount = rand(101, 112);
+                saveCount(newCount);
+                return newCount;
+            }
+            return parseInt(savedCount, 10);
+        }
+
+        function saveCount(count) {
+            localStorage.setItem('pageCount', count);
+            var currentTime = new Date().getTime();
+            localStorage.setItem('lastUpdate', currentTime);
+        }
+
         function loadCount() {
             var lastUpdate = localStorage.getItem('lastUpdate');
             var currentTime = new Date().getTime();
@@ -39,19 +55,10 @@
             }
 
             var savedCount = localStorage.getItem('pageCount');
-            return savedCount ? parseInt(savedCount, 10) : rand(101, 112);
+            return savedCount ? parseInt(savedCount, 10) : initializeCount();
         }
 
-        function saveCount(count) {
-            var currentTime = new Date().getTime();
-            localStorage.setItem('pageCount', count);
-            localStorage.setItem('lastUpdate', currentTime);
-        }
-
-        var c = loadCount();
-        $("#copies").html(c);
-
-        function copies() {
+        function updateCount() {
             var el = $("#copies");
             var left = parseInt($(el).html(), 10);
 
@@ -61,11 +68,13 @@
             $(el).html(left);
             saveCount(left);
 
-            setTimeout(copies, rand(3000, 9000));
+            setTimeout(updateCount, rand(3000, 9000));
         }
 
         $(document).ready(function () {
-            copies();
+            var c = loadCount();
+            $("#copies").html(c);
+            updateCount();
         });
     </script>
 </body>
