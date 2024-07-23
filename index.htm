@@ -28,13 +28,9 @@
         }
 
         function initializeCount() {
-            var savedCount = localStorage.getItem('pageCount');
-            if (!savedCount) {
-                var newCount = rand(101, 112);
-                saveCount(newCount);
-                return newCount;
-            }
-            return parseInt(savedCount, 10);
+            var newCount = rand(101, 112);
+            saveCount(newCount);
+            return newCount;
         }
 
         function saveCount(count) {
@@ -44,9 +40,14 @@
         }
 
         function loadCount() {
+            var savedCount = localStorage.getItem('pageCount');
             var lastUpdate = localStorage.getItem('lastUpdate');
             var currentTime = new Date().getTime();
             var timehours = 0.5 * 60 * 60 * 1000;
+
+            if (!savedCount) {
+                return initializeCount();
+            }
 
             if (!lastUpdate || (currentTime - lastUpdate) > timehours) {
                 var newCount = rand(101, 112);
@@ -54,8 +55,7 @@
                 return newCount;
             }
 
-            var savedCount = localStorage.getItem('pageCount');
-            return savedCount ? parseInt(savedCount, 10) : initializeCount();
+            return parseInt(savedCount, 10);
         }
 
         function updateCount() {
@@ -74,7 +74,7 @@
         $(document).ready(function () {
             var c = loadCount();
             $("#copies").html(c);
-            updateCount();
+            setTimeout(updateCount, rand(3000, 9000));
         });
     </script>
 </body>
