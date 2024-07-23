@@ -28,7 +28,7 @@
         }
 
         function initializeCount() {
-            var newCount = rand(101, 112);
+            var newCount = rand(107, 112);
             saveCount(newCount);
             return newCount;
         }
@@ -52,7 +52,7 @@
 
             // If time since last update exceeds the threshold, reset count
             if (!lastUpdate || (currentTime - lastUpdate) > timehours) {
-                var newCount = rand(101, 112);
+                var newCount = rand(107, 112);
                 saveCount(newCount);
                 return newCount;
             }
