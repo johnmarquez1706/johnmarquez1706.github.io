@@ -46,15 +46,18 @@
             var timehours = 0.5 * 60 * 60 * 1000;
 
             if (!savedCount) {
+                // If no saved count, initialize it
                 return initializeCount();
             }
 
+            // If time since last update exceeds the threshold, reset count
             if (!lastUpdate || (currentTime - lastUpdate) > timehours) {
                 var newCount = rand(101, 112);
                 saveCount(newCount);
                 return newCount;
             }
 
+            // Return the saved count if it's still valid
             return parseInt(savedCount, 10);
         }
 
@@ -68,12 +71,16 @@
             $(el).html(left);
             saveCount(left);
 
+            // Schedule the next update
             setTimeout(updateCount, rand(3000, 9000));
         }
 
         $(document).ready(function () {
+            // Load and display the count
             var c = loadCount();
             $("#copies").html(c);
+
+            // Start the periodic update
             setTimeout(updateCount, rand(3000, 9000));
         });
     </script>
