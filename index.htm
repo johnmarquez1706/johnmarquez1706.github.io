@@ -33,13 +33,13 @@
             var timehours = 0.5 * 60 * 60 * 1000;
 
             if (!lastUpdate || (currentTime - lastUpdate) > timehours) {
-                var newCount = rand(112, 121);
+                var newCount = rand(101, 112);
                 saveCount(newCount);
                 return newCount;
             }
 
             var savedCount = localStorage.getItem('pageCount');
-            return savedCount ? parseInt(savedCount, 10) : rand(112, 117);
+            return savedCount ? parseInt(savedCount, 10) : rand(101, 112);
         }
 
         function saveCount(count) {
