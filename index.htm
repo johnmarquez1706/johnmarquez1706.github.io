@@ -23,7 +23,7 @@
         }
 
         function customRand() {
-            var values = [-3, -2, -2, -1, -1, -1, 0, 0, 1, 1, 1, 2, 2, 2, 3];
+            var values = [-3, -2, -2, -1, -1, -1, 0, 0, 1, 1, 1, 1, 2, 2, 2, 3];
             return values[Math.floor(Math.random() * values.length)];
         }
 
@@ -52,7 +52,7 @@
 
             // If time since last update exceeds the threshold, reset count
             if (!lastUpdate || (currentTime - lastUpdate) > timehours) {
-                var newCount = rand(107, 112);
+                var newCount = rand(109, 117);
                 saveCount(newCount);
                 return newCount;
             }
